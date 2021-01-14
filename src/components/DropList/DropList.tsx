@@ -32,17 +32,17 @@ export function DropList(props: DropListPropsType) {
     // }
 }
 
-type DropListTitlePropsType = {
+export type DropListTitlePropsType = {
     value: string
 }
 
-function DropListTitle(props: DropListTitlePropsType) {
+export function DropListTitle(props: DropListTitlePropsType) {
     return (
         <><h3>{props.value}</h3></>
     )
 }
 
-type DropListBodyPropsType = {
+export type DropListBodyPropsType = {
     one: string
     two: string
     three: string
@@ -50,7 +50,7 @@ type DropListBodyPropsType = {
     five: string
 }
 
-function DropListBody(props: DropListBodyPropsType) {
+export function DropListBody(props: DropListBodyPropsType) {
     return (
         <ul>
             <li><i>{props.one}</i></li>

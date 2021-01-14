@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { DropList } from './components/DropList/DropList'
 import { Rating } from './components/Rating/Rating'
-import { OnOff } from './components/OnOff/OnOff';
+import { OnOff } from './components/OnOff/OnOff'
+import { DropListAuto } from './components/DropListAuto/DropListAuto'
 
 // alert('Let start')
 
@@ -21,7 +22,14 @@ function App() {
         five={'Ryzen X'}
       />
       <Rating value={5} />
-      <OnOff status={false} />
+      <OnOff />
+      <DropListAuto
+        title={'PRODUCTS'}
+        one={'Meat'}
+        two={'Bred'}
+        three={'Milk'}
+        four={'Ham'}
+        five={'Vegetables'} />
 
       <DropList
         nameOf={'Intel processors'}
@@ -33,7 +41,14 @@ function App() {
         five={'Rocket Lake'}
       />
       <Rating value={3} />
-      <OnOff status={true} />
+      <OnOff />
+      <DropListAuto
+        title={'Cars'}
+        one={'BMW'}
+        two={'Audi'}
+        three={'Mersedes'}
+        four={'Toyota'}
+        five={'Mazda'} />
     </div>
   );
 }
