@@ -1,0 +1,30 @@
+.on {
+    background-color: green;
+    border-radius: 20px;
+}
+
+.off {
+    background-color: red;
+    border-radius: 20px;
+}
+
+.circleRed {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.circleGreen {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.block {
+    display: flex;
+    width: 200px;
+}
